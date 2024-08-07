@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Carousel Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header>
+  <nav class="fixed-top ">
+  <div class="containe" style="background-color: #eccccf;width: 100%;">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/static" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4">基于爬取拉钩网python工作岗位数据</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link " aria-current="page">可视化大屏</a></li>
+        <li class="nav-item"><a href="/datashow" class="nav-link" aria-current="page" >数据展示</a></li>
+
+        <li class="nav-item"><a href="/about" class="nav-link active">关于</a></li>
+      </ul>
+    </header>
+  </div>
+</nav>
+
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  </div>
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-4">
+         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"/>
+            <image href="../static/images/lichaoquan.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/>
+        </svg>
+        <h2 class="fw-normal">李超权</h2>
+        <p>精通Python、ajax、flask、js、html、css、mysql、爬虫、数据分析、数据可视化、数据展示等技术，负责数据爬取、前端页面设计、后端接口设计、数据可视化等工作。</p>
+        <p><a class="btn btn-secondary" href="#" style="background-color: darkslateblue;color: deeppink;border-color: #007bff;">组长</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"/>
+            <image href="../static/images/liaoxiaoqi.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        </svg>
+        <h2 class="fw-normal">廖晓琪</h2>
+        <p>精通Python、爬虫、数据分析、数据可视化、数据展示等技术，负责数据采集、数据清洗、数据分析、数据可视化、数据展示等工作。</p>
+        <p><a class="btn btn-secondary" href="#" style="background-color: pink;color: deeppink;border-color: #007bff;">组员</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"/>
+            <image href="../static/images/tuzi.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        </svg>
+        <h2 class="fw-normal">郑摇</h2>
+        <p>精通flask框架、scrapy框架、数据分析，mysql数据库、echarts可视化、数据展示等技术，负责数据存储、数据清洗、前端页面设计、数据可视化等工作。</p>
+        <p><a class="btn btn-secondary" href="#" style="background-color: pink;color: deeppink;border-color: #007bff;">组员</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+<div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"/>
+            <image href="../static/images/ai.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        </svg>
+        <h2 class="fw-normal">艾若霜</h2>
+        <p>精通Python、爬虫、数据分析、数据可视化、数据展示等技术，负责数据采集、数据清洗、数据分析、数据可视化、数据展示等工作。</p>
+        <p><a class="btn btn-secondary" href="#" style="background-color: pink;color: deeppink;border-color: #007bff;">组员</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"/>
+            <image href="../static/images/liuzhao.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        </svg>
+        <h2 class="fw-normal">刘钊</h2>
+        <p>精通Python、爬虫、数据分析、数据可视化、数据展示等技术，负责ppt设计、数据采集、数据清洗、数据分析、数据可视化、数据展示等工作。</p>
+        <p><a class="btn btn-secondary" href="#" style="background-color: pink;color: deeppink;border-color: #007bff;">组员</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"/>
+            <image href="../static/images/liwei.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        </svg>
+        <h2 class="fw-normal">李伟</h2>
+        <p>精通Python、爬虫、数据分析、数据可视化、数据展示等技术，负责数据采集、数据清洗、数据分析、数据可视化、数据展示、文档编写等工作。</p>
+        <p><a class="btn btn-secondary" href="#" style="background-color: pink;color: deeppink;border-color: #007bff;">组员</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</main>
+
+
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
